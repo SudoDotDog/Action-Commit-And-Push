@@ -16,7 +16,7 @@ REPLACED=$(echo $URL | sed "s/https:\/\//https:\/\/${USERNAME}:${TOKEN}@/")
 git switch -c $BRANCH
 git add .
 
-git commit -m "$MESSAGE"
+git commit -m $MESSAGE
 git remote set-url --push $BRANCH $REPLACED
 # git push --set-upstream $REMOTE $BRANCH
 
