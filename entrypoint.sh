@@ -18,4 +18,12 @@ git add .
 
 git commit -m "$MESSAGE"
 git remote set-url --push $BRANCH $REPLACED
-git push --set-upstream $REMOTE $BRANCH
+# git push --set-upstream $REMOTE $BRANCH
+
+echo $USERNAME
+echo $EMAIL
+echo $MESSAGE
+echo $BRANCH
+echo $REMOTE
+echo $URL
+echo $REPLACED
