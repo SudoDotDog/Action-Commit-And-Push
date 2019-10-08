@@ -1,0 +1,33 @@
+name: "Commit And Push"
+description: "Commit And Push current change to repository"
+inputs:
+  username:
+    description: "Git Username"
+    required: true
+  email:
+    description: "Git Email"
+    required: true
+  token:
+    description: "Git Token"
+    required: true
+  message:
+    description: "Git Commit Message"
+    required: true
+  branch:
+    description: "Git Branch"
+    required: false
+    default: "master"
+  remote:
+    description: "Git Remote Name"
+    required: false
+    default: "origin"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.username }}
+    - ${{ inputs.email }}
+    - ${{ inputs.token }}
+    - ${{ inputs.message }}
+    - ${{ inputs.branch }}
+    - ${{ inputs.remote }}
