@@ -1,4 +1,5 @@
 #!/bin/sh -l
 
 TEST=$1
-echo "$TEST"
+B=$($2)
+echo "$TEST $B"
