@@ -19,17 +19,4 @@ COMBINED="$MESSAGE $VERSION"
 git add .
 git commit -m "$COMBINED"
 git remote set-url --push $BRANCH $REPLACED
-# git push --set-upstream $REMOTE $BRANCH
-
-git status
-git log
-
-echo $USERNAME
-echo $EMAIL
-echo $MESSAGE
-echo $COMBINED
-echo $VERSION
-echo $BRANCH
-echo $REMOTE
-echo $URL
-echo $REPLACED
+git push --set-upstream $REMOTE $BRANCH
