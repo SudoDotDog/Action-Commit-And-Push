@@ -16,6 +16,7 @@ REPLACED=$(echo $URL | sed "s/https:\/\//https:\/\/${USERNAME}:${TOKEN}@/")
 
 COMBINED="$MESSAGE $VERSION"
 
+git checkout $BRANCH
 git add .
 git commit -m "$COMBINED"
 git remote set-url --push $REMOTE $REPLACED
