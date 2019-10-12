@@ -1,4 +1,5 @@
 name: "Commit And Push"
+author: "WMXPY"
 description: "Commit And Push current change to repository"
 inputs:
   username:
