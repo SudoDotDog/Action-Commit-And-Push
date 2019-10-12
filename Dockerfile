@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:12
+FROM alpine:latest
 
 RUN apk add --no-cache git sed
 
