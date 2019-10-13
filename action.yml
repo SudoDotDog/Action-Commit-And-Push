@@ -22,10 +22,6 @@ inputs:
     description: "Git Remote Name"
     required: false
     default: "origin"
-  version:
-    description: "Version Name"
-    required: false
-    default: "echo"
 runs:
   using: "docker"
   image: "Dockerfile"
@@ -36,4 +32,3 @@ runs:
     - ${{ inputs.message }}
     - ${{ inputs.branch }}
     - ${{ inputs.remote }}
-    - ${{ inputs.version }}
